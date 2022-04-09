@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_favourite"
+        android:icon="@drawable/ic_baseline_favorite_24"
+        android:title="@string/favourite"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_language"
+        android:title="@string/films_language"
+        app:showAsAction="never">
+
+        <menu>
+            <group
+                android:id="@+id/group_language"
+                android:checkableBehavior="single">
+                <item
+                    android:id="@+id/item_en"
+                    android:orderInCategory="1"
+                    android:title="@string/EN"
+                    android:visible="true"
+                    app:showAsAction="never" />
+
+                <item
+                    android:id="@+id/item_ru"
+                    android:checked="true"
+                    android:orderInCategory="1"
+                    android:title="@string/RU"
+                    android:visible="true"
+                    app:showAsAction="never" />
+            </group>
+        </menu>
+
+    </item>
+
+    <item
+        android:id="@+id/menu_genre"
+        android:title="@string/genres"
+        app:showAsAction="never">
+
+        <menu>
+            <group
+                android:id="@+id/group_genre"
+                android:checkableBehavior="all">
+
+                <item
+                    android:id="@+id/item_action"
+                    android:checked="true"
+                    android:title="@string/action" />
+
+                <item
+                    android:id="@+id/item_adventure"
+                    android:checked="true"
+                    android:title="@string/adventure" />
+
+                <item
+                    android:id="@+id/item_animation"
+                    android:checked="true"
+                    android:title="@string/animation" />
+
+                <item
+                    android:id="@+id/item_family"
+                    android:checked="true"
+                    android:enabled="false"
+                    android:title="@string/family" />
+
+                <item
+                    android:id="@+id/item_history"
+                    android:checked="true"
+                    android:title="@string/history" />
+
+                <item
+                    android:id="@+id/item_horror"
+                    android:checked="false"
+                    android:enabled="false"
+                    android:title="@string/horror" />
+
+                <item
+                    android:id="@+id/item_drama"
+                    android:checkable="true"
+                    android:checked="true"
+                    android:title="@string/drama" />
+
+            </group>
+        </menu>
+
+    </item>
+
+</menu>

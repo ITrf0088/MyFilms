@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">Семейные Фильмы</string>
+    <string name="main_toolbar_description">Обзор фильмов</string>
+    <string name="favourite_toolbar_description">Любимые фильмы</string>
+    <string name="poster_of_film">Постер к фильму</string>
+    <string name="popular">Популярные</string>
+    <string name="rating">Рейтинговые</string>
+    <string name="title_name">title name</string>
+    <string name="floating_button">floating_button</string>
+    <string name="title">Название</string>
+    <string name="original_title">Оригинальное название</string>
+    <string name="vote_average">Рейтинг</string>
+    <string name="release_date">Дата релиза</string>
+    <string name="overview">Описание:</string>
+    <string name="missing">Отсутствует</string>
+    <string name="favourite">Избранное</string>
+    <string name="play_trailer">play trailer</string>
+    <string name="comment_from">Комментарий от %s:</string>
+    <string name="added_to_favourite">Добавлено в любимые фильмы</string>
+    <string name="deleted_from_favourite">Удалено из любимых фильмов</string>
+    <string name="no_connection">Нет соединения с интернетом</string>
+    <string name="films_language">Язык фильмов</string>
+    <string name="EN">EN</string>
+    <string name="RU">RU</string>
+    <string name="genres">Жанры</string>
+    <string name="action">Боевик</string>
+    <string name="adventure">Приключение</string>
+    <string name="animation">Анимация</string>
+    <string name="family">Семейный</string>
+    <string name="history">Исторический</string>
+    <string name="drama">Драма</string>
+    <string name="horror">Ужасы</string>
+    <string name="no_films">Больше нет фильмов для выбранных жанров!</string>
+
+
+</resources>

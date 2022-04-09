@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.DetailActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="700dp"
+            android:fitsSystemWindows="true"
+            app:collapsedTitleTextColor="@color/white"
+            app:contentScrim="@color/black"
+            app:expandedTitleTextAppearance="@android:color/transparent"
+            app:expandedTitleTextColor="@color/white"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+
+            >
+
+            <ImageView
+                android:id="@+id/image_inside_poster"
+                android:layout_width="match_parent"
+                android:layout_height="700dp"
+                android:contentDescription="@string/title_name"
+                android:scaleType="centerCrop"
+                app:layout_anchor="@+id/app_bar_layout"
+                app:layout_anchorGravity="center"
+                app:layout_collapseMode="parallax"
+                tools:src="@drawable/spider2" />
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:title="asdasdsad"
+                app:titleTextColor="@color/white" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+        <include
+            layout="@layout/movie_base"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floating_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="25dp"
+        android:contentDescription="@string/floating_button"
+        android:src="@drawable/ic_fav_white"
+        app:backgroundTint="@color/white"
+        app:elevation="6dp"
+        app:layout_anchor="@id/app_bar_layout"
+        app:layout_anchorGravity="bottom|end"
+        app:pressedTranslationZ="12dp" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
